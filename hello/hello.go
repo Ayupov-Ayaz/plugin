@@ -7,7 +7,7 @@ import (
 
 func SayHello(name, path  string) string {
 	if path == "" {
-		path = "./hello/example.so"
+		path = "./hello/plugin/example.so"
 	}
 
 	p, err := plugin.Open(path)
