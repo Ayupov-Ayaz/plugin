@@ -6,7 +6,7 @@ import (
 )
 
 func SayHello(name string) string {
-	p, err := plugin.Open("./example.so")
+	p, err := plugin.Open("./hello/example.so")
 	if err != nil {
 		log.Fatal(err)
 	}
