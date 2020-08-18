@@ -1,13 +1,12 @@
-package hello
+package main
 
 import (
-	"fmt"
 	"log"
 	"plugin"
 )
 
-func HelloPlugin() {
-	p, err := plugin.Open("./run/example.so")
+func HelloPlugin(name string) string {
+	p, err := plugin.Open("./example.so")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -22,5 +21,5 @@ func HelloPlugin() {
 		log.Fatal("fail")
 	}
 
-	fmt.Println(f("All"))
+	return f(name)
 }
