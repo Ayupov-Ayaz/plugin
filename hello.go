@@ -23,3 +23,5 @@ func SayHello(name string) string {
 
 	return f(name)
 }
+
+func main() {}
