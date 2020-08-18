@@ -1,3 +1,3 @@
-module github.com/aypov-ayaz/plugin
+module github.com/ayupov-ayaz/plugin
 
 go 1.14

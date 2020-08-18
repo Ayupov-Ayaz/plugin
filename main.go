@@ -1,6 +1,6 @@
 package main
 
-import "github.com/aypov-ayaz/plugin/hello"
+import "github.com/ayupov-ayaz/plugin/hello"
 
 func main() {
 	hello.HelloPlugin()
