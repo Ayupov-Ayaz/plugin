@@ -1,4 +1,4 @@
-package main
+package plugin
 
 import (
 	"log"
@@ -23,5 +23,3 @@ func SayHello(name string) string {
 
 	return f(name)
 }
-
-func main() {}
