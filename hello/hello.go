@@ -1,11 +1,11 @@
-package main
+package hello
 
 import (
 	"log"
 	"plugin"
 )
 
-func HelloPlugin(name string) string {
+func SayHello(name string) string {
 	p, err := plugin.Open("./example.so")
 	if err != nil {
 		log.Fatal(err)

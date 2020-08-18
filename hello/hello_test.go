@@ -1,11 +1,11 @@
-package main
+package hello
 
 import "testing"
 
 func TestHello(t *testing.T) {
 	const name  = "tommy"
 
-	hello := HelloPlugin(name)
+	hello := SayHello(name)
 	if hello != "Hello " + name {
 		t.Fatal("failed")
 	}
