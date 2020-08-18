@@ -5,12 +5,8 @@ import (
 	"plugin"
 )
 
-func SayHello(name, path  string) string {
-	if path == "" {
-		path = "./hello/plugin/example.so"
-	}
-
-	p, err := plugin.Open(path)
+func SayHello(name string) string {
+	p, err := plugin.Open("./hello/plugin/example.so")
 	if err != nil {
 		log.Fatal(err)
 	}
