@@ -1,4 +1,4 @@
-package main
+package plugin
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"plugin"
 )
 
-func main() {
+func HelloPlugin() {
 	p, err := plugin.Open("./run/example.so")
 	if err != nil {
 		log.Fatal(err)
